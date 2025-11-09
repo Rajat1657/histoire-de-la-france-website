@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histoire de la France</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== MENU BUTTON ===== -->
+  <header>
+    <button id="menuBtn">☰</button>
+  </header>
+
+  <!-- ===== SIDE MENU ===== -->
+  <nav id="sideMenu">
+    <button id="closeBtn">×</button>
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="pages/alesia.html">⚔️ 52 av. J.-C. – Conquête de la Gaule</a></li>
+      <li><a href="pages/joan.html">👑 1429 – Jeanne d’Arc et la Guerre de Cent Ans</a></li>
+      <li><a href="pages/renaissance.html">🏛 1500 – Renaissance et Humanisme</a></li>
+      <li><a href="pages/louis.html">☀️ 1661 – Louis XIV et l’Âge d’Or</a></li>
+      <li><a href="pages/napoleon.html">🪖 1815 – Napoléon et Waterloo</a></li>
+      <li><a href="pages/colonisation.html">🌍 1900 – Colonisation et Décolonisation</a></li>
+      <li><a href="pages/ww1.html">⚔️ 1914 – Première Guerre mondiale</a></li>
+      <li><a href="pages/ww2.html">🔥 1939 – Seconde Guerre mondiale</a></li>
+      <li><a href="pages/may1968.html">✊ 1968 – Révoltes étudiantes</a></li>
+      <hr>
+      <li><a href="pages/contact.html">📩 Contact</a></li>
+      <li><a href="pages/contributors.html">❤️ Remerciements</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div id="title">HISTOIRE DE LA FRANCE</div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section id="timeline">
+    <h2>Sélectionnez une période</h2>
+
+    <div class="slider-wrapper">
+      <div class="year-labels">
+        <span>52 av. J.-C.</span>
+        <span>1429</span>
+        <span>1500</span>
+        <span>1661</span>
+        <span>1815</span>
+        <span>1900</span>
+        <span>1914</span>
+        <span>1939</span>
+        <span>1968</span>
+      </div>
+      <input type="range" id="yearSlider" min="0" max="8" step="0.1" value="0">
+    </div>
+
+    <div id="eventDisplay">
+      <img id="eventImage" src="images/alesia.jpg" alt="">
+      <h3 id="eventName">La Conquête de la Gaule et la Bataille d'Alésia</h3>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
